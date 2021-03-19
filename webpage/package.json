@@ -1,0 +1,45 @@
+{
+  "name": "portfolio",
+  "sideEffects": [
+    "*css"
+  ],
+  "version": "0.1.0",
+  "description": "Programmer's portfolio",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "webpack --config webpack.test.js && mocha dist/tests.js",
+    "dev": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack",
+    "start": "npm run build"
+  },
+  "keywords": [
+    "programmer",
+    "portfolio"
+  ],
+  "author": "Kail",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "1.2.34",
+    "@fortawesome/free-brands-svg-icons": "5.15.2",
+    "@fortawesome/free-solid-svg-icons": "5.15.2",
+    "markdown-element": "^2.0.2"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.2",
+    "css-loader": "^5.1.2",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mocha": "^8.3.2",
+    "style-loader": "^2.0.0",
+    "typescript": "^4.2.3",
+    "typescript-eslint-parser": "^22.0.0",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-node-externals": "^2.5.2"
+  }
+}

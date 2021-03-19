@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio programisty</title>
+
+    <style>
+        section:first-of-type {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: calc(120px + 50%);
+            margin: 0 auto;
+        }
+
+        section:first-of-type img {
+            border-radius: 50%;
+            height: 170px;
+            width: 165px;
+            border: 2px solid #fff;
+            margin-right: 5%;
+        }
+
+        section:last-of-type ul{
+            list-style-type: none;
+            margin: 0;
+            font-size: 60px;
+            padding: 0;
+            text-align: center;
+        }
+
+        section:last-of-type ul li{
+            display: inline-block;
+            cursor: pointer;
+            transition: border-bottom .5s;
+            transition: font-size .5s;
+        }
+
+        section:last-of-type ul li:hover{
+            border-bottom: 3px solid darkred;
+            font-size: 2em;
+            margin-bottom: -3px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <img src="img/me.jpg">
+        <about-me></about-me>
+    </section>
+    <section>
+        <ul>
+            <li onclick="controls.startGame()">🎮</li>
+            <li><a href="blog/index.html" style="text-decoration: none">📑</a></li>
+            <li onclick="controls.startJoke()">😂</li>
+        </ul>
+    </section>
+    <aside>
+        <gh-repos></gh-repos>
+        <template id="gh-logo">
+            <style>
+                .svg-inline--fa {
+                    display: inline-block;
+                    font-size: inherit;
+                    height: 1em;
+                    overflow: visible;
+                    vertical-align: -.125em;
+                }
+
+                .svg-inline--fa.fa-w-16 {
+                    width: 1em;
+                }
+            </style>
+            My <i class="fab fa-github"></i> repositories
+        </template>
+    </aside>
+<script type="text/javascript" src="runtime.js"></script><script type="text/javascript" src="vendors.js"></script><script type="text/javascript" src="main.js"></script></body>
+</html>
